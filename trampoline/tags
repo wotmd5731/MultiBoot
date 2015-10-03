@@ -1,0 +1,112 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADB_H	adb.h	19;"	d
+BUSYBOX_BIN	trampoline.c	39;"	d	file:
+DEVICES_H	devices.h	2;"	d
+ENV	adb.c	/^static char * const ENV[] = {$/;"	v	file:
+EXEC_MASK	trampoline.c	36;"	d	file:
+FIRMWARE_DIR1	devices.c	60;"	d	file:
+FIRMWARE_DIR2	devices.c	61;"	d	file:
+KEEP_REALDATA	trampoline.c	40;"	d	file:
+LOCAL_FORCE_STATIC_EXECUTABLE	Android.mk	/^LOCAL_FORCE_STATIC_EXECUTABLE := true$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE:= trampoline$/;"	m
+LOCAL_MODULE_PATH	Android.mk	/^LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)$/;"	m
+LOCAL_MODULE_TAGS	Android.mk	/^LOCAL_MODULE_TAGS := eng$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH:= $(call my-dir)$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES:= \\$/;"	m
+LOCAL_STATIC_LIBRARIES	Android.mk	/^LOCAL_STATIC_LIBRARIES := libcutils libc$/;"	m
+LOCAL_UNSTRIPPED_PATH	Android.mk	/^LOCAL_UNSTRIPPED_PATH := $(TARGET_ROOT_OUT_UNSTRIPPED)$/;"	m
+MS_RELATIME	trampoline.c	43;"	d	file:
+MULTIROM_BIN	trampoline.c	38;"	d	file:
+REALDATA	trampoline.c	37;"	d	file:
+SYSFS_PREFIX	devices.c	59;"	d	file:
+UEVENT_ERR	devices.c	54;"	d	file:
+UEVENT_ERR	devices.c	56;"	d	file:
+UEVENT_MSG_LEN	devices.c	965;"	d	file:
+__CALL_SYSTEM_MOUNT	trampoline.c	/^static void __CALL_SYSTEM_MOUNT(struct fstab *fstab){$/;"	f	file:
+action	devices.c	/^    const char *action;$/;"	m	struct:uevent	file:
+adb_cleanup	adb.c	/^void adb_cleanup(void)$/;"	f
+adb_get_serial	adb.c	/^int adb_get_serial(char *serial, int maxlen)$/;"	f
+adb_init	adb.c	/^void adb_init(char *mrom_path)$/;"	f
+adb_init_busybox	adb.c	/^int adb_init_busybox(void)$/;"	f
+adb_init_fs	adb.c	/^void adb_init_fs(void)$/;"	f
+adb_init_usb	adb.c	/^void adb_init_usb(void)$/;"	f
+adb_is_enabled	adb.c	/^int adb_is_enabled(char *mrom_path)$/;"	f
+adb_pid	adb.c	/^static pid_t adb_pid = -1;$/;"	v	file:
+adb_quit	adb.c	/^void adb_quit(void)$/;"	f
+adb_thread	adb.c	/^static pthread_t adb_thread;$/;"	v	file:
+adb_thread_work	adb.c	/^static void *adb_thread_work(void *mrom_path)$/;"	f	file:
+adbd_path	adb.c	/^static char adbd_path[64] = { 0 };$/;"	v	file:
+add_dev_perms	devices.c	/^int add_dev_perms(const char *name, const char *attr,$/;"	f
+add_platform_device	devices.c	/^static void add_platform_device(const char *path)$/;"	f	file:
+attr	devices.c	/^    char *attr;$/;"	m	struct:perms_	file:
+busybox_path	adb.c	/^static char busybox_path[64] = { 0 };$/;"	v	file:
+device_fd	devices.c	/^static int device_fd = -1;$/;"	v	file:
+device_name	devices.c	/^    const char *device_name;$/;"	m	struct:uevent	file:
+devices_close	devices.c	/^void devices_close(void)$/;"	f
+devices_init	devices.c	/^void devices_init(void)$/;"	f
+dp	devices.c	/^    struct perms_ dp;$/;"	m	struct:perm_node	typeref:struct:perm_node::perms_	file:
+find_multirom	trampoline.c	/^static int find_multirom(void)$/;"	f	file:
+find_platform_device	devices.c	/^static struct platform_node *find_platform_device(const char *path)$/;"	f	file:
+firmware	devices.c	/^    const char *firmware;$/;"	m	struct:uevent	file:
+fixup_symlinks	trampoline.c	/^static void fixup_symlinks(void)$/;"	f	file:
+fixup_sys_perms	devices.c	/^void fixup_sys_perms(const char *upath)$/;"	f
+get_character_device_symlinks	devices.c	/^static char **get_character_device_symlinks(struct uevent *uevent)$/;"	f	file:
+get_device_fd	devices.c	/^int get_device_fd()$/;"	f
+get_device_perm	devices.c	/^static mode_t get_device_perm(const char *path, unsigned *uid, unsigned *gid)$/;"	f	file:
+get_usecs	devices.c	/^static inline suseconds_t get_usecs(void)$/;"	f	file:
+get_usecs	devices.c	470;"	d	file:
+gid	devices.c	/^    unsigned int gid;$/;"	m	struct:perms_	file:
+handle_block_device_event	devices.c	/^static void handle_block_device_event(struct uevent *uevent)$/;"	f	file:
+handle_device	devices.c	/^static void handle_device(const char *action, const char *devpath,$/;"	f	file:
+handle_device_event	devices.c	/^static void handle_device_event(struct uevent *uevent)$/;"	f	file:
+handle_device_fd	devices.c	/^void handle_device_fd(void)$/;"	f
+handle_firmware_event	devices.c	/^static void handle_firmware_event(struct uevent *uevent)$/;"	f	file:
+handle_generic_device_event	devices.c	/^static void handle_generic_device_event(struct uevent *uevent)$/;"	f	file:
+handle_platform_device_event	devices.c	/^static void handle_platform_device_event(struct uevent *uevent)$/;"	f	file:
+init_folder	devices.c	/^static void init_folder(const char *path)$/;"	f	file:
+init_single_path	devices.c	/^static void init_single_path(const char *path)$/;"	f	file:
+is_booting	devices.c	/^static int is_booting(void)$/;"	f	file:
+is_charger_mode	trampoline.c	/^static int is_charger_mode(void)$/;"	f	file:
+list	devices.c	/^    struct listnode list;$/;"	m	struct:platform_node	typeref:struct:platform_node::listnode	file:
+load_firmware	devices.c	/^static int load_firmware(int fw_fd, int loading_fd, int data_fd)$/;"	f	file:
+log_event_print	devices.c	465;"	d	file:
+log_event_print	devices.c	469;"	d	file:
+main	trampoline.c	/^int main(int argc, char *argv[])$/;"	f
+major	devices.c	/^    int major;$/;"	m	struct:uevent	file:
+make_device	devices.c	/^static void make_device(const char *path,$/;"	f	file:
+make_dir	devices.c	/^static int make_dir(const char *path, mode_t mode)$/;"	f	file:
+minor	devices.c	/^    int minor;$/;"	m	struct:uevent	file:
+mount_and_run	trampoline.c	/^static void mount_and_run(struct fstab *fstab)$/;"	f	file:
+name	devices.c	/^    char *name;$/;"	m	struct:perms_	file:
+name	devices.c	/^    char *name;$/;"	m	struct:platform_node	file:
+parse_device_name	devices.c	/^static const char *parse_device_name(struct uevent *uevent, unsigned int len)$/;"	f	file:
+parse_event	devices.c	/^static void parse_event(const char *msg, struct uevent *uevent)$/;"	f	file:
+parse_platform_block_device	devices.c	/^static char **parse_platform_block_device(struct uevent *uevent)$/;"	f	file:
+partition_name	devices.c	/^    const char *partition_name;$/;"	m	struct:uevent	file:
+partition_num	devices.c	/^    int partition_num;$/;"	m	struct:uevent	file:
+path	devices.c	/^    char *path;$/;"	m	struct:platform_node	file:
+path	devices.c	/^    const char *path;$/;"	m	struct:uevent	file:
+path_len	devices.c	/^    int path_len;$/;"	m	struct:platform_node	file:
+path_multirom	trampoline.c	/^static char path_multirom[64] = { 0 };$/;"	v	file:
+perm	devices.c	/^    mode_t perm;$/;"	m	struct:perms_	file:
+perm_node	devices.c	/^struct perm_node {$/;"	s	file:
+perms_	devices.c	/^struct perms_ {$/;"	s	file:
+platform_node	devices.c	/^struct platform_node {$/;"	s	file:
+plist	devices.c	/^    struct listnode plist;$/;"	m	struct:perm_node	typeref:struct:perm_node::listnode	file:
+prefix	devices.c	/^    unsigned short prefix;$/;"	m	struct:perms_	file:
+process_firmware_event	devices.c	/^static void process_firmware_event(struct uevent *uevent)$/;"	f	file:
+remove_platform_device	devices.c	/^static void remove_platform_device(const char *path)$/;"	f	file:
+run_event_thread	devices.c	/^static volatile int run_event_thread = 1;$/;"	v	file:
+run_multirom	trampoline.c	/^static void run_multirom(void)$/;"	f	file:
+run_thread	adb.c	/^static volatile int run_thread = 0;$/;"	v	file:
+sehandle	devices.c	/^static struct selabel_handle *sehandle;$/;"	v	typeref:struct:selabel_handle	file:
+subsystem	devices.c	/^    const char *subsystem;$/;"	m	struct:uevent	file:
+uevent	devices.c	/^struct uevent {$/;"	s	file:
+uevent_thread	devices.c	/^static pthread_t uevent_thread;$/;"	v	file:
+uevent_thread_work	devices.c	/^static void *uevent_thread_work(void *cookie)$/;"	f	file:
+uid	devices.c	/^    unsigned int uid;$/;"	m	struct:perms_	file:
